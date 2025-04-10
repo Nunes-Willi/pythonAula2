@@ -60,25 +60,89 @@ dataAtual = datetime.date.today()
 # else: print("Acima de 65 anos")
 
 #TODO 09
-aluno = []
-nota1 = float(input("Coloque a nota da Prova 1: "))
-nota2 = float(input("Coloque a nota da Prova 2: "))
-nota3 = float(input("Coloque a nota da Prova 3: "))
+# nota1 = float(input("Coloque a nota da Prova 1: "))
+# nota2 = float(input("Coloque a nota da Prova 2: "))
+# nota3 = float(input("Coloque a nota da Prova 3: "))
 
-media = (nota1 + nota2 + nota3) / 3
+# media = (nota1 + nota2 + nota3) / 3
 # if media >= 6:
 #     print(f"\033[32m {f'Você foi aprovado(a), sua média foi {media}'}")
 # else: print(f"\033[31m{f'Você foi reprovado(a), sua média foi {media}'}")
 
 #TODO 10
-nota4 = float(input("Coloque a nota da Prova 4: "))
-nota5 = float(input("Coloque a nota da Prova 5: "))
-nota6 = float(input("Coloque a nota da Prova 6: "))
+# nota4 = float(input("Coloque a nota da Prova 4: "))
+# nota5 = float(input("Coloque a nota da Prova 5: "))
 
-media2 = (nota4 + nota5 + nota6) / 3
+# media2 = (nota4 + nota5) / 2
 
-mediaFinal = (media + media2) / 2
+# if media2 < 7:
+#     print(f"\033[33m EXAME")
+#     notaExame = float(input("Coloque a nota do Exame: "))
+#     if notaExame < 5:
+#         print(f"\033[31m REPROVADO")
+#     else: print(f"\033[32m APROVADO")
+# else: print(f"\033[32m APROVADO")
 
-aluno.append(mediaFinal)
-if aluno < 7:
-    print("Exame")
+#TODO 11
+# nome = input("Escreva seu Nome: ")
+# qtdHoras = float(input("Qunatia de horas de aula: "))
+# qtdPorHora = float(input("Ganhos por horas de aula: "))
+
+# ganhos = qtdHoras * qtdPorHora
+
+# nome2 = input("Escreva seu Nome: ")
+# qtdHoras2 = float(input("Qunatia de horas de aula: "))
+# qtdPorHora2 = float(input("Ganhos por horas de aula: "))
+
+# ganhos2 = qtdHoras2 * qtdPorHora2
+
+# if ganhos < ganhos2:
+#     print(f"O Professor {nome2} ganha mais")
+# else: print(f"O Professor {nome} ganha mais")
+
+#TODO 12
+# parImpar = int(input("Coloque um numero: "))
+# if parImpar % 2 == 0:
+#     print("É par")
+# else: print("É impar")
+
+#TODO 13
+# timeA = input("Nome do Time: ")
+# golsA = int(input("Quantia de gols do time: "))
+
+# timeB = input("Nome do Time: ")
+# golsB = int(input("Quantia de gols do time: "))
+
+# if golsA < golsB:
+#     print(f"O Time do {timeB} foi Vencedor")
+# elif golsB == golsA:
+#     print("EMPATE")
+# else: print(f"O Time do {timeA} foi Vencedor")
+
+#TODO 14
+# cidade = ['Carioca', 'Paulista', 'Mineiros', 'Outros']
+# siglas = ['RJ', 'SP', 'MG']
+# sigla = input("Sigla do seu estado: ")
+# if sigla == 'RJ':
+#     print(cidade[0])
+# elif sigla == 'SP':
+#     print(cidade[1])
+# elif sigla == 'MG':
+#     print(cidade[2])
+# else: print(cidade[3])
+
+#TODO 15
+# produto = float(input("Valor do produto: "))
+# if produto < 20.00:
+#     print (f"R$ {((produto * 45 / 100) + produto):.2f}")
+# else: print(f"R$ {((produto * 30 / 100) + produto):.2f}")
+
+#TODO 16
+mes = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Novembro', 'Dezembro']
+numb = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+number = int(input("Escolha um numero: "))
+
+for i in numb:
+    nmes = (numb[i], mes[i])
+
+    print(nmes)
