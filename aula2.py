@@ -50,9 +50,35 @@ dataAtual = datetime.date.today()
 # else: print(f"Você tem ou teria {idade} anos")
 
 #TODO 08
-idade = int(input("Sua idade: "))
-if idade >= 18 and idade < 65:
-    print("Você é de Maior")
-elif idade < 18:
-    print("Você é DMenor")
-else: print("Acima de 65 anos")
+# idade = int(input("Sua idade: "))
+# if idade >= 18 and idade <= 65:
+#     print("Você é de Maior")
+# elif idade < 0:
+#     print("Você não nasceu ainda")
+# elif idade < 18:
+#     print("Você é DMenor")
+# else: print("Acima de 65 anos")
+
+#TODO 09
+aluno = []
+nota1 = float(input("Coloque a nota da Prova 1: "))
+nota2 = float(input("Coloque a nota da Prova 2: "))
+nota3 = float(input("Coloque a nota da Prova 3: "))
+
+media = (nota1 + nota2 + nota3) / 3
+# if media >= 6:
+#     print(f"\033[32m {f'Você foi aprovado(a), sua média foi {media}'}")
+# else: print(f"\033[31m{f'Você foi reprovado(a), sua média foi {media}'}")
+
+#TODO 10
+nota4 = float(input("Coloque a nota da Prova 4: "))
+nota5 = float(input("Coloque a nota da Prova 5: "))
+nota6 = float(input("Coloque a nota da Prova 6: "))
+
+media2 = (nota4 + nota5 + nota6) / 3
+
+mediaFinal = (media + media2) / 2
+
+aluno.append(mediaFinal)
+if aluno < 7:
+    print("Exame")
