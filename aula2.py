@@ -138,11 +138,63 @@ dataAtual = datetime.date.today()
 # else: print(f"R$ {((produto * 30 / 100) + produto):.2f}")
 
 #TODO 16
-mes = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Novembro', 'Dezembro']
-numb = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
-number = int(input("Escolha um numero: "))
+# mes = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro','Novembro', 'Dezembro']
+# number = int(input("Escolha um numero: "))
+# elif number == 1:
+#     print(mes[0])
+# elif number == 2:
+#     print(mes[1])
+# elif number == 3:
+#     print(mes[2])
+# elif number == 4:
+#     print(mes[3])
+# elif number == 5:
+#     print(mes[4])
+# elif number == 6:
+#     print(mes[5])
+# elif number == 7:
+#     print(mes[6])
+# elif number == 8:
+#     print(mes[7])
+# elif number == 9:
+#     print(mes[8])
+# elif number == 10:
+#     print(mes[9])
+# elif number == 11:
+#     print[mes[10]]
+# elif number == 12:
+#     print(mes[11])
+# else: print(f"\033[31m ERROR")
 
-for i in numb:
-    nmes = (numb[i], mes[i])
+#TODO 17
+# vogal = ['A', 'E', 'I', 'O', 'U', 'Y']
+# letra = input("Coloque uma letra: ").upper()
+# if letra == vogal[0]:
+#     print("Vogal")
+# elif letra == vogal[1]:
+#     print("Vogal")
+# elif letra == vogal[2]:
+#     print("Vogal")
+# elif letra == vogal[3]:
+#     print("Vogal")
+# elif letra == vogal[4]:
+#     print("Vogal")
+# elif letra == vogal[5]:
+#     print("Vogal")
+# else:print("Consoante")
 
-    print(nmes)
+#TODO 18
+# a = int(input("Coloque um numero: "))
+# b = int(input("Coloque outro numero: "))
+
+# if a < b:
+#     print(b)
+# else: print (a)
+
+#TODO 19
+# a = int(input("Coloque um numero: "))
+# b = int(input("Coloque outro numero: "))
+
+# if a < b:
+#     print(a , b)
+# else: print (b , a)
