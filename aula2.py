@@ -1,5 +1,5 @@
 #Lista de Exercícios Estrutura de Decisão
-import datetime
+import datetime, math
 #TODO 01
 # number = float(input("Coloque um número: "))
 # if number > 0:
@@ -106,13 +106,7 @@ dataAtual = datetime.date.today()
 #     print("É par")
 # else: print("É impar")
 
-#TODO 13
-# timeA = input("Nome do Time: ")
-# golsA = int(input("Quantia de gols do time: "))
-
-# timeB = input("Nome do Time: ")
-# golsB = int(input("Quantia de gols do time: "))
-
+#TODO 13bhaskara
 # if golsA < golsB:
 #     print(f"O Time do {timeB} foi Vencedor")
 # elif golsB == golsA:
@@ -198,3 +192,94 @@ dataAtual = datetime.date.today()
 # if a < b:
 #     print(a , b)
 # else: print (b , a)
+
+#TODO 20
+# a = int(input("Coloque um numero: "))
+# b = int(input("Coloque outro numero: "))
+# c = int(input("Coloque outro numero: "))
+
+# if a != b and b != c and c != a:
+#     if a > b and a > c:
+#         print(a)
+#     elif b > a and b > c:
+#      print (b)
+#     else: print(c)
+# else: print("Numeros Iguais")
+
+#TODO 21
+# a = int(input("Coloque um numero: "))
+# b = int(input("Coloque outro numero: "))
+# c = int(input("Coloque outro numero: "))
+# if a != b and b != c and c != a:
+#     if a > b and b > c:
+#         print(a + b)
+#     elif c > a and a > b:
+#         print (c + a)
+#     else: print(c + b)
+# else: print("Numeros Iguais")
+
+#TODO 22
+# a = int(input("Coloque um numero: "))
+# b = int(input("Coloque outro numero: "))
+# c = int(input("Coloque outro numero: "))
+
+# lista = [a, b, c]
+# if a != b and b != c and c != a:
+#     print(sorted(lista))
+# else: print("Numeros Iguais")
+
+#TODO 23
+# nota1 = float(input("Nota 1: "))
+# nota2 = float(input("Nota 2: "))
+# if nota1 > 10 or nota2 > 10:
+#     print("Nota(s) Maior que a permitida")
+
+# media = (nota1 + nota2) / 2
+# conceitos = ['A', 'B', 'C', 'D', 'E']
+
+# if media > 9 and media <= 10:
+#     conceito = conceitos[0]
+# elif media > 7.5 and media <= 9:
+#     conceito = conceitos[1]
+# elif media > 6 and media <= 7.5:
+#     conceito = conceitos[2]
+# elif media > 4 and media <= 6:
+#     conceito = conceitos[3]
+# else: conceito = conceitos[4]
+# print(conceito)
+
+# if conceito == "A" or conceito == "B" or conceito == "C":
+#     print(f"\033[32m APROVADO, {nota1}, {nota2}, {media}, {conceito}")
+# else: print(f"\033[31m REPROVADO, {nota1}, {nota2}, {media}, {conceito}")
+
+#TODO 24
+# valor1 = float(input("Valor 1: "))
+# valor2 = float(input("Valor 2: "))
+
+# # print("Escolha uma ação: \n Adição + \n Subtração - \n Multiplicação * \n Divisão /")
+# a = int(input("Escolha uma ação: \n 1 Adição + | 2 Subtração - | 3 Multiplicação * | 4 Divisão / \n"))
+
+# if a > 4:
+#     print("Não tem essa operação")
+# elif a == 1:
+#     print(valor1 + valor2)
+# elif a == 2:
+#     print(valor1 - valor2)
+# elif a == 3:
+#     print(valor1 * valor2)
+# else: print(valor1 / valor2)
+
+#TODO 25
+a = float(input("Valor de A: "))
+b = float(input("Valor de B: "))
+c = float(input("Valor de C: "))
+
+delta = math.sqrt(b ** 2 - 4 * a *c)
+if delta < 0:
+    print("Não possui raiz")
+elif delta == 0:
+    x = -b + delta
+    print(f"Existe um x real {x}")
+else: x1 = -b + delta
+x2 = -b - delta
+print(f"Existe duas raizes {x1} e {x2}")
